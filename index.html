@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator/practice</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+    <nav>
+        <div class="navbar">
+          <div class="container nav-container">
+              <input class="checkbox" type="checkbox" name="" id="" />
+              <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+              </div>  
+            <div class="logo">
+              <h1 class="stock" style="text-align: center; color: rgb(255, 255, 255);">Calculator</h1>
+            </div>
+            <div class="menu-items">
+              <li ><a href="index.home.html" class="stock">Home</a></li>
+              <li><a href="index.html" class="stock">Calculator</a></li>
+              <li><a href="#" class="stock">Age Calculator</a></li>
+            </div>
+          </div>
+        </div>
+      </nav>
+   <div class="calculator"> 
+    <input type="text" class="screen" id="screen" disabled>
+    <div class="buttons">
+        <button class="btn" onclick="appendValue('7')">7</button>
+        <button class="btn" onclick="appendValue('8')">8</button>
+        <button class="btn" onclick="appendValue('9')">9</button>
+        <button class="btn" onclick="appendValue('4')">4</button>
+        <button class="btn" onclick="appendValue('5')">5</button>
+        <button class="btn" onclick="appendValue('6')">6</button>
+        <button class="btn" onclick="appendValue('1')">1</button>
+        <button class="btn" onclick="appendValue('2')">2</button>
+        <button class="btn" onclick="appendValue('3')">3</button>
+        <button class="btn" onclick="appendValue('+')">+</button>
+        <button class="btn" onclick="appendValue('0')">0</button>   
+        <button class="btn" onclick="appendValue('-')">-</button>
+        <button class="btn" onclick="appendValue('*')">*</button>
+        <button class="btn" onclick="appendValue('/')">/</button>
+        <button class="btn" onclick="clearScreen()">Clear</button>
+        <button class="btn" onclick="calculate()">=</button>
+    </div>
+   </div> 
+   <p style="font-size: xx-small; text-align: center;">Created by MORK</p>
+   <script src="script.js"></script>   
+</body>
+</html>
